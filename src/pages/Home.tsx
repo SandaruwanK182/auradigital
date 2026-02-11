@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Check, Star, Zap, Shield, Headphones } from 'lucide-react'
+import { ArrowRight, Check, Star, Shield, Headphones } from 'lucide-react'
 import SEO from '../components/SEO'
 import PurchaseModal from '../components/PurchaseModal'
 import { Product } from '../types'
