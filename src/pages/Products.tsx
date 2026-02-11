@@ -7,11 +7,11 @@ import { Product } from '../types'
 const ALL_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'ChatGPT Plus Setup',
-    price: '₹499 / LKR 1,500 / $5',
-    description: 'Complete ChatGPT Plus subscription setup and account optimization',
-    features: ['New account creation', 'Email setup & verification', 'Payment method configuration', 'Plus subscription activation', '7 days priority support', 'Usage guidance & best practices'],
-    image: 'https://images.unsplash.com/photo-1677442d019cecf70d30891b8a4be07cd2221dec2?w=500&h=500&fit=crop',
+    name: 'ChatGPT Pro Setup',
+    price: 'LKR 500 ',
+    description: 'Complete ChatGPT Pro subscription setup and account optimization',
+    features: ['New account creation', 'Email setup & verification', 'Payment method configuration', 'Pro subscription activation', '7 days priority support', 'Usage guidance & best practices'],
+    image: 'https://media.designrush.com/articles/314658/conversions/ChatGPT-Pro-preview.jpg',
     category: 'AI Tools',
     highlighted: true,
   },
@@ -99,10 +99,13 @@ export default function Products() {
         url="https://auradigital.com/products"
       />
 
-      <div className="pt-20">
+      <div className="pt-16">
         {/* Hero */}
-        <section className="min-h-80 bg-gradient-dark flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <section className="min-h-80 flex items-center relative overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-950/75"></div>
+          
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
             <h1 className="text-5xl font-bold mb-6">
               Our <span className="gradient-text">Products & Services</span>
             </h1>

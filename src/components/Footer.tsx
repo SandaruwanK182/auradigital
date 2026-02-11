@@ -67,7 +67,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-slate-500 text-sm border-t border-slate-700/30 pt-8">
-          <p>&copy; {currentYear} Aura Digital. All rights reserved. | Phone/WhatsApp: +94 723 146 364</p>
+          <p>&copy; {currentYear} Aura Digital. All rights reserved. </p>
         </div>
       </div>
     </footer>

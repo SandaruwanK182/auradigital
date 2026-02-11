@@ -47,7 +47,7 @@ export default function PurchaseModal({ product, isOpen, onClose }: PurchaseModa
 📝 *Message:* ${formData.message || 'No additional message'}
 
 ---
-This is an automated order request from auradigital.com
+This is an automated order request from auradigi.vercel.app
     `.trim()
 
     const phoneNumber = '94723146364'

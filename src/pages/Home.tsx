@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight, Check, Star, Zap, Shield, Headphones } from 'lucide-react'
 import SEO from '../components/SEO'
 import PurchaseModal from '../components/PurchaseModal'
@@ -7,11 +8,11 @@ import { Product } from '../types'
 const FEATURED_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'ChatGPT Plus Setup',
-    price: '₹499 / LKR 1,500 / $5',
-    description: 'Complete ChatGPT Plus subscription setup and account optimization',
-    features: ['Account creation', 'Subscription setup', '7-day support', 'Payment guidance'],
-    image: 'https://images.unsplash.com/photo-1677442d019cecf70d30891b8a4be07cd2221dec2?w=500&h=500&fit=crop',
+    name: 'ChatGPT Pro Setup',
+    price: 'LKR 500 ',
+    description: 'Complete ChatGPT Pro subscription setup and account optimization',
+    features: ['New account creation', 'Email setup & verification', 'Payment method configuration', 'Pro subscription activation', '7 days priority support', 'Usage guidance & best practices'],
+    image: 'https://media.designrush.com/articles/314658/conversions/ChatGPT-Pro-preview.jpg',
     category: 'AI Tools',
     highlighted: true,
   },
@@ -57,7 +58,7 @@ export default function Home() {
         url="https://auradigital.com"
       />
 
-      <div className="pt-20">
+      <div className="pt-16">
         {/* Hero Section */}
         <section className="min-h-screen flex items-center relative overflow-hidden" style={{backgroundImage: 'url(https://i.pinimg.com/736x/f4/8c/61/f48c6182400bf249b53ec1d6396270b4.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
           {/* Dark overlay for text readability */}
@@ -72,12 +73,12 @@ export default function Home() {
                 </div>
 
                 <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Your AI & Digital
-                  <span className="gradient-text"> Tools Expert</span>
+                  Your Gatway to Next - Gen
+                   <br></br><span className="gradient-text"> Digital Tools.</span>
                 </h1>
 
                 <p className="text-xl text-slate-400 mb-8 leading-relaxed">
-                  Professional setup and support for ChatGPT, Midjourney, and 100+ productivity tools. Serving businesses across 7 countries.
+                  Professional setup and support for ChatGPT, Gemini, and 100+ productivity tools. Serving businesses across 7 countries.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -108,10 +109,12 @@ export default function Home() {
 
               {/* Right Image */}
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl border border-cyan-500/30 p-8 glass-dark animate-float">
-                  <div className="w-full h-full bg-slate-800/50 rounded-lg flex items-center justify-center">
-                    <Zap className="w-48 h-48 text-cyan-400 opacity-20" />
-                  </div>
+                <div className="aspect-square rounded-2xl border border-cyan-500/30 p-8 glass-dark animate-float overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1677442d019cecf70d30891b8a4be07cd2221dec2?w=600&h=600&fit=crop"
+                    alt="Aura Digital Solutions"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -230,14 +233,22 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 glass-dark border border-cyan-500/30 p-12 text-center">
+        <section className="py-20 relative overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1557821552-17105176677c?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/90 to-slate-950/95"></div>
+          
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 p-12 text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl text-slate-400 mb-8">
               Join 500+ clients already using Aura Digital for their AI and productivity needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary">Explore All Products</button>
+              <Link
+                to="/products"
+                className="btn-primary text-center inline-block"
+              >
+                Explore All Products
+              </Link>
               <a
                 href="https://wa.me/94723146364"
                 className="btn-secondary"

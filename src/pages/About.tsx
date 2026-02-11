@@ -10,10 +10,13 @@ export default function About() {
         url="https://auradigital.com/about"
       />
 
-      <div className="pt-20">
+      <div className="pt-16">
         {/* Hero */}
-        <section className="min-h-80 bg-gradient-dark flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <section className="min-h-80 flex items-center relative overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-950/75"></div>
+          
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
             <h1 className="text-5xl font-bold mb-6">
               About <span className="gradient-text">Aura Digital</span>
             </h1>
@@ -50,8 +53,14 @@ export default function About() {
         </section>
 
         {/* Why Trust Us */}
-        <section className="py-20 bg-slate-900/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 relative overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+          {/* Animated gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/90 to-slate-950/95"></div>
+          {/* Animated accent */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-center mb-16">
               <span className="gradient-text">Why Trust Aura Digital?</span>
             </h2>
@@ -79,7 +88,7 @@ export default function About() {
                   desc: 'Dedicated team of AI and productivity tool specialists',
                 },
               ].map((item, idx) => (
-                <div key={idx} className="glass-dark p-8">
+                <div key={idx} className="glass-dark p-8 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
                   <item.icon className="w-12 h-12 text-cyan-400 mb-4" />
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-slate-400">{item.desc}</p>
@@ -90,10 +99,13 @@ export default function About() {
         </section>
 
         {/* Our Story */}
-        <section className="py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 relative overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/90 to-slate-950/95"></div>
+          
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold mb-8">Our Story</h2>
-            <div className="space-y-6 text-slate-400 leading-relaxed">
+            <div className="space-y-6 text-slate-400 leading-relaxed text-justify">
               <p>
                 Aura Digital was founded with a simple observation: talented businesses and individuals in emerging markets struggle to access and properly set up advanced digital tools due to regional limitations, payment barriers, and lack of technical guidance.
               </p>
@@ -132,7 +144,7 @@ export default function About() {
         </section>
 
         {/* CTA */}
-        <section className="py-20">
+        <section className="py-20" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1557821552-17105176677c?w=1200&h=600&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 glass-dark p-12 text-center border border-cyan-500/30">
             <h2 className="text-3xl font-bold mb-4">Join Our Growing Community</h2>
             <p className="text-slate-400 mb-8">
