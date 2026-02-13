@@ -119,7 +119,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-square rounded-2xl border border-cyan-500/30 p-8 glass-dark animate-float overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1677442d019cecf70d30891b8a4be07cd2221dec2?w=600&h=600&fit=crop"
+                    src="public\aura-logo.png"
                     alt="Aura Digital Solutions"
                     className="w-full h-full object-cover rounded-lg"
                   />
