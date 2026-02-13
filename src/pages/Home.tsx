@@ -46,7 +46,7 @@ const FEATURED_PRODUCTS: Product[] = [
     category: 'Productivity',
     highlighted: true,
   },
-]
+]   
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
@@ -84,13 +84,19 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <button className="btn-primary">
+                  <Link
+                    to="/contact"
+                    className="btn-primary text-center"
+                  >
                     Get Started Now
                     <ArrowRight className="inline ml-2" size={20} />
-                  </button>
-                  <button className="btn-secondary">
+                  </Link>
+                  <Link
+                    to="/products"
+                    className="btn-secondary text-center"
+                  >
                     View Products
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="flex gap-8 text-sm">

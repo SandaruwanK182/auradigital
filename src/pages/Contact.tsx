@@ -73,9 +73,14 @@ Sent from auradigital.com
         url="https://auradigital.com/contact"
       />
 
-      <div className="pt-20">
+      <div>
         {/* Hero */}
-        <section className="min-h-80 bg-gradient-dark flex items-center">
+        <section 
+          className="min-h-80 bg-gradient-dark flex items-center bg-cover bg-center bg-no-repeat relative mt-16"
+          style={{
+            backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.85) 100%), url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop)',
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
             <h1 className="text-5xl font-bold mb-6">
               Get in <span className="gradient-text">Touch</span>
@@ -124,7 +129,12 @@ Sent from auradigital.com
         </section>
 
         {/* Main Contact Section */}
-        <section className="py-20">
+        <section 
+          className="py-20 bg-cover bg-center bg-fixed relative"
+          style={{
+            backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%), url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop)',
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -245,7 +255,7 @@ Sent from auradigital.com
                         <h3 className="font-semibold mb-2">Email</h3>
                         <p className="text-slate-400 mb-4">Send us detailed inquiries</p>
                         <a href="mailto:hello@auradigital.com" className="text-cyan-400 font-bold text-lg hover:text-cyan-300">
-                          hello@auradigital.com
+                          sandaruwank182@gmail.com
                         </a>
                       </div>
                     </div>
